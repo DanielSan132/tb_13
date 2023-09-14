@@ -1,15 +1,25 @@
 import{List } from "@phosphor-icons/react"
+import styles from "./Header.module.css"
 
-import"./Header.css"
 function Header() {
   return (
-    <header>
-<div className="mobile">
-    <div className="menu">
+    <header className={styles.header}>
+<div className={styles.mobile}>
+    <div className={styles.menu}>
         <button>
         <List size={32} />
         </button>
-        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fdoclogo.com%2Fpt&psig=AOvVaw39Yr61ABNmtYcEDzn2CA1M&ust=1693598265313000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODm3KnXh4EDFQAAAAAdAAAAABAX" alt="pinguin" />
+
+        <h3>Logo</h3>
+    
+    </div>
+    <div className={styles.options}>
+      <nav>
+        <a href="">Home</a>
+        <a href="">Resultados</a>
+        <a href="">Produtos</a>
+        <a href="">Login</a>
+      </nav>
     </div>
 </div>
     </header>
