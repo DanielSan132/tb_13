@@ -8,6 +8,8 @@ text-align: center;
 justify-content: space-between;
 border: 1px solid #999;
 padding: 1rem;
+width: 10%;
+
 }
 
 .options{
@@ -15,6 +17,8 @@ display: flex;
 border: 1px solid #000;
 width: 10rem;
 translate: -100%;
+
+transition: translate .3s;
 }
 
 .options nav {

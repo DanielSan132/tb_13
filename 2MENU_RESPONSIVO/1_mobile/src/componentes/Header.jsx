@@ -1,6 +1,7 @@
-import{List } from "@phosphor-icons/react"
+import{List, X } from "@phosphor-icons/react"
 import styles from "./Header.module.css"
 import { useState } from "react"
+import borys from '../borys.jpg'
 
 function Header() {
 
@@ -22,11 +23,18 @@ setAbrirmenu(true)
 <div className={styles.mobile}>
     <div className={styles.menu}>
         <button onClick={handleAbrirFechar} >
-        <List size={32} />
+    {
+Abrirmenu === true ?(
+  < X List size={32} />
+) : (
+<List size={32} />
+
+)
+
+    }
         </button >
 
-        <h3>Logo</h3>
-    
+<img src={borys} alt="bolinhas" />    
     </div>
     <div className={`${styles.options} ${Abrirmenu === true && styles.open}`}>
       <nav className="">
